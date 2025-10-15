@@ -11,7 +11,7 @@ units:
   py: ky + 2
 points:
   zones:
-    matrix:
+    left-matrix:
       key:
         padding: 1ky
         spread: 1kx
@@ -33,30 +33,30 @@ points:
         home:
         top:
         num:
-    thumbs-1:
+    left-thumb-lower:
       key:
         padding: 1ky
         spread: 1kx
       columns:
-        layer:
-        space:
-          key.stagger: 2
+        left:
+          rows.top.skip: true
+        mid:
+          rows.top.skip: true
+          key.stagger: -2
       rows:
-        cluster:
-          shift: [0.5kx, -1ky - 3]
-    thumbs-2:
+        bottom:
+          shift: [3.5kx, -1ky]
+    left-thumb-upper:
       key:
         padding: 1ky
         spread: 1kx
       columns:
-        layer:
-
-          key.stagger: 2
+        right:
+        key.splay: -15
       rows:
-        cluster:
-          splay: 12
-          shift: [-1.3kx, -1.3ky]
-        a:
+        bottom:
+          shift: [6kx, 0.25ky]
+        top:
 outlines:
 pcbs:
 cases:
