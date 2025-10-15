@@ -9,6 +9,8 @@ units:
   # padding + 2mm
   px: kx + 2
   py: ky + 2
+  $default_width: cx
+  $default_height: cy
   # mm
   offset: 0
 points:
@@ -64,5 +66,30 @@ points:
     ref: matrix_inner_num
     distance: 4.5kx
 outlines:
+  raw:
+    - what: rectangle
+      where: true
+      size: [kx, ky]
+  keys:
+    - what: rectangle
+      where: true
+      size: [kx-0.5,ky-0.5]
+  board:
+    - what: polygon
+      operation: stack
+      points:
+        - ref: matrix_outer_num
+        - ref: matrix_pinky_num
+        - ref: matrix_ring_num
+        - ref: matrix_middle_num
+        - ref: matrix_index_num
+        - ref: matrix_inner_num
+        - ref: mirror_matrix_inner_num
+        - ref: mirror_matrix_index_num
+        - ref: mirror_matrix_middle_num
+        - ref: mirror_matrix_ring_num
+        - ref: mirror_matrix_pinky_num
+        - ref: mirror_matrix_outer_num
+        - ref: mirror_matrix_outer_bottom
 pcbs:
 cases:
