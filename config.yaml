@@ -9,9 +9,11 @@ units:
   # padding + 2mm
   px: kx + 2
   py: ky + 2
+  # mm
+  offset: 0
 points:
   zones:
-    left-matrix:
+    matrix:
       key:
         padding: 1ky
         spread: 1kx
@@ -50,13 +52,17 @@ points:
       key:
         padding: 1ky
         spread: 1kx
+      anchor:
+        shift: [6kx, -1ky]
       columns:
         right:
-        key.splay: -15
+          key.splay: -15
       rows:
         bottom:
-          shift: [6kx, 0.25ky]
         top:
+  mirror: &mirror
+    ref: matrix_inner_num
+    distance: 4.5kx
 outlines:
 pcbs:
 cases:
