@@ -5,5 +5,5 @@ jobs:
   build:
     uses: philipsoitu/kb-config/.github/workflows/build-user-config.yml@main
     with:
-      build_matrix_path: build.yaml
+      build_matrix_path: firmware/build.yaml
       config_path: firmware/
