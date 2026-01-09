@@ -5,7 +5,7 @@
         compatible = "zmk,physical-layout";
         display-name = "Scylla";
         transform = <&scylla_transform>;
-        kscan = <&kscan0>;
+        kscan = <&kscan>;
     };
 
     scylla_transform: scylla_transform {
