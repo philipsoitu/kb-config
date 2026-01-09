@@ -1,3 +1,5 @@
+#include "scylla.dtsi"
+
 / {
     zmk,split-role = "left";
 };
