@@ -27,7 +27,7 @@
         lower_layer {
             bindings = <
                 &kp TILDE &kp EXCL &kp AT    &kp HASH   &kp DLLR  &kp PRCNT            &kp CARET &kp AMPS  &kp ASTRK &kp LPAR  &kp RPAR  &kp DEL
-                &reset    &none    &none     &none      &none     &kp LBRC             &kp RBRC  &kp KP_N7 &kp KP_N8 &kp KP_N9 &none     &kp PLUS
+                &sys_reset    &none    &none     &none      &none     &kp LBRC             &kp RBRC  &kp KP_N7 &kp KP_N8 &kp KP_N9 &none     &kp PLUS
                 &none     &kp HOME &kp PG_UP &kp PG_DN  &kp END   &kp LPAR             &kp RPAR  &kp KP_N4 &kp KP_N5 &kp KP_N6 &kp MINUS &kp PIPE 
                 &none     &none    &none     &none      &none     &none                &none     &kp KP_N1 &kp KP_N2 &kp KP_N3 &kp EQUAL &kp UNDER
                                              &trans     &kp HOME  &trans               &mo ADJ   &kp RALT  &trans
@@ -49,7 +49,7 @@
         adjust_layer {
             bindings = <
                 &out OUT_BLE &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4              &none &none &none &none &none &none
-                &out OUT_USB &none        &none        &none        &reset       &none                     &none &none &none &none &none &none
+                &out OUT_USB &none        &none        &none        &sys_reset       &none                     &none &none &none &none &none &none
                 &none                     &none        &none        &none        &none                     &none &none &none &none &none &none
                 &bt BT_CLR   &none        &none        &none        &none        &bootloader               &none &none &none &none &none &none
                                                        &none        &none        &none                     &none &none &none
