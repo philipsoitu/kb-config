@@ -2,7 +2,7 @@
 
 / {
     chosen {
-        zmk,keyboard = &skeletyl_layout;
+        zmk,physical-layout = &skeletyl_layout;
     };
 
     scylla: keyboard {

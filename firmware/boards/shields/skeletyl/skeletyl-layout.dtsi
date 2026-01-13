@@ -1,7 +1,16 @@
+#include <dt-bindings/zmk/matrix_transform.h>
+
 / {
+    skeletyl_transform: skeletyl_transform {
+        compatible = "zmk,matrix-transform";
+        rows = <1>;
+        columns = <1>;
+        map = <RC(0,0)>;
+    };
+
     skeletyl_layout: skeletyl_layout {
         compatible = "zmk,physical-layout";
         display-name = "Skeletyl";
-        keys = <1>;
+        transform = <&skeletyl_transform>;
     };
 };
