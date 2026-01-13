@@ -1,9 +1,8 @@
 #include "skeletyl-layout.dtsi"
-#include <dt-bindings/zmk/kscan.h>
 
 / {
     chosen {
-        zmk,keyboard = &skeletyl;
+        zmk,physical-layout = &skeletyl_layout;
         zmk,kscan = &kscan;
     };
 
