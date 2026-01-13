@@ -1,0 +1,7 @@
+/ {
+    skeletyl_layout: skeletyl_layout {
+        compatible = "zmk,physical-layout";
+        display-name = "Skeletyl";
+        keys = <1>;
+    };
+};

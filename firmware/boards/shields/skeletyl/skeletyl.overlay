@@ -1,6 +1,6 @@
 / {
     chosen {
-        zmk,keyboard = &scylla;
+        zmk,keyboard = &skeletyl_layout;
     };
 
     scylla: keyboard {

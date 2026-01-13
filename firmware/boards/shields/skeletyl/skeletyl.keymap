@@ -4,7 +4,7 @@
 
         default_layer {
             bindings = <
-                &kp LS(4)
+                &kp LS(N4)
             >;
         };
     };
