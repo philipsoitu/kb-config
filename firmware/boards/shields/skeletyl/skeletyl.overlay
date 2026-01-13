@@ -1,3 +1,5 @@
+#include "scylla-layout.dtsi"
+
 / {
     chosen {
         zmk,keyboard = &skeletyl_layout;
