@@ -1,4 +1,4 @@
-#include "scylla-layout.dtsi"
+#include "skeletyl-layout.dtsi"
 
 / {
     chosen {
