@@ -1,20 +1,23 @@
 #include "skeletyl-layout.dtsi"
+#include <dt-bindings/zmk/kscan.h>
 
 / {
     chosen {
-        zmk,physical-layout = &skeletyl_layout;
+        zmk,keyboard = &skeletyl;
+        zmk,kscan = &kscan;
     };
 
-    scylla: keyboard {
+    kscan: kscan {
+        compatible = "zmk,kscan-gpio-direct";
+        label = "Skeletyl KSCAN";
+
+        input-gpios = <
+            &gpio0 2 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)
+        >;
+    };
+
+    skeletyl: keyboard {
         compatible = "zmk,keyboard-gpio";
         label = "Skeletyl";
-
-        gpio-keys {
-            compatible = "gpio-keys";
-            scylla_key: key_0 {
-                gpios = <&gpio0 2 GPIO_ACTIVE_LOW>;
-                label = "Skeletyl Key";
-            };
-        };
     };
 };
