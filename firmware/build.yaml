@@ -20,7 +20,4 @@
 ---
 include:
   - board: nice_nano
-    shield: scylla_left
-
-  - board: nice_nano
-    shield: scylla_right
+    shield: skeletyl

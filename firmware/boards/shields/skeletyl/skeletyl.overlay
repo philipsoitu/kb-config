@@ -1,0 +1,18 @@
+/ {
+    chosen {
+        zmk,keyboard = &scylla;
+    };
+
+    scylla: keyboard {
+        compatible = "zmk,keyboard-gpio";
+        label = "Skeletyl";
+
+        gpio-keys {
+            compatible = "gpio-keys";
+            scylla_key: key_0 {
+                gpios = <&gpio0 2 GPIO_ACTIVE_LOW>;
+                label = "Skeletyl Key";
+            };
+        };
+    };
+};
