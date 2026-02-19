@@ -11,7 +11,24 @@
         label = "Skeletyl KSCAN";
 
         input-gpios = <
-            &gpio0 2 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)
+            &gpio0  6 (GPIO_ACTIVE_LOW | GPIO_PULL_UP) /* (0, 0) */
+            &gpio0  8 (GPIO_ACTIVE_LOW | GPIO_PULL_UP) /* (0, 1) */
+            &gpio0 17 (GPIO_ACTIVE_LOW | GPIO_PULL_UP) /* (0, 2) */
+            &gpio0 20 (GPIO_ACTIVE_LOW | GPIO_PULL_UP) /* (0, 3) */
+            &gpio0 22 (GPIO_ACTIVE_LOW | GPIO_PULL_UP) /* (0, 4) */
+            &gpio0 24 (GPIO_ACTIVE_LOW | GPIO_PULL_UP) /* (0, 5) */
+            &gpio1  0 (GPIO_ACTIVE_LOW | GPIO_PULL_UP) /* (0, 6) */
+            &gpio0 11 (GPIO_ACTIVE_LOW | GPIO_PULL_UP) /* (0, 7) */
+            &gpio1  4 (GPIO_ACTIVE_LOW | GPIO_PULL_UP) /* (0, 8) */
+            &gpio1  6 (GPIO_ACTIVE_LOW | GPIO_PULL_UP) /* (0, 9) */
+            &gpio0  9 (GPIO_ACTIVE_LOW | GPIO_PULL_UP) /* (0, 10) */
+            &gpio0 10 (GPIO_ACTIVE_LOW | GPIO_PULL_UP) /* (0, 11) */
+            &gpio1 11 (GPIO_ACTIVE_LOW | GPIO_PULL_UP) /* (0, 12) */
+            &gpio1 13 (GPIO_ACTIVE_LOW | GPIO_PULL_UP) /* (0, 13) */
+            &gpio1 15 (GPIO_ACTIVE_LOW | GPIO_PULL_UP) /* (0, 14) */
+            &gpio0  2 (GPIO_ACTIVE_LOW | GPIO_PULL_UP) /* (0, 15) */
+            &gpio0 29 (GPIO_ACTIVE_LOW | GPIO_PULL_UP) /* (0, 16) */
+            &gpio0 31 (GPIO_ACTIVE_LOW | GPIO_PULL_UP) /* (0, 17) */
         >;
     };
 
