@@ -1,0 +1,5 @@
+#include "skeletyl.dtsi"
+
+&skeletyl_transform {
+    col-offset = <18>;
+};
